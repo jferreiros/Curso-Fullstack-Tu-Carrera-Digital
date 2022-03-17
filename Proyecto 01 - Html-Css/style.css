@@ -1,0 +1,79 @@
+.container {
+    width: 90%;
+    align-items: center;
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.logo, img {
+    width: 5%;
+
+}
+
+.navbar, ul {
+    list-style-type: none;
+
+}
+
+.navbar, li {
+    display: inline;
+}
+.banner {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.banner
+
+.text {
+    grid-column: 1 / 3;
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+.img, img {
+    width: 100%;
+}
+
+.img {
+    grid-column: 3 / 5;
+}
+
+.contact {
+
+}
+
+.footer {
+    grid-column: 2 / 3;
+    grid-row: 6;
+
+}
+
+.navfooter {
+
+}
+
+.logofooter {
+
+}
