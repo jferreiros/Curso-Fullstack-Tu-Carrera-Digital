@@ -15,7 +15,7 @@
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
-    margin: 2rem 0 0.5rem;
+    margin: 2.5rem 0 0.5rem;
     font-weight: 900;
 }
 
@@ -73,7 +73,7 @@ body {
 .wrapper {
     max-width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 4rem;
     height: 100%;
 }
 
@@ -81,9 +81,7 @@ body {
 
 header {
     height: 15vh;
-    background-color: white;
-    position: sticky;
-    
+    background-color: white;    
 }
 
 header .wrapper {    
@@ -199,33 +197,30 @@ main {
     align-items: center;
     padding: 5vh 0;
 }
-.section-cards .textBox {
+.card {
     grid-column: span 4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    
     text-align: center;
-    background-color: red;
+    background-color: white;
     border-radius: 2.5vh;
 }
+.section-cards .textBox {
+    padding: 2rem;
+}
+.section-cards .textBox h4 {
+    margin: 0;
+}
 .img-card {
+    overflow: hidden;
+}
+.img-card img {
+    border-radius: 2.5vh 2.5vh 0 0;
 }
 
-
-.textBox {
-    grid-column: span 5;
-}
-
-.imgBox {
-    
-    grid-column: span 7;
-    
-}
-}
-.imgBox, img{
-}
 
 /* Footer */
 
