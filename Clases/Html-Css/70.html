@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="71.css">
+    <script src="72.js"></script>
     <title>Document</title>
     <script>
-        function myFunction01() {
-            document.getElementById("pruebas").innerHTML = "Función 1";
-        }
-        function myFunction02() {
-            document.getElementById("pruebas").innerHTML = "Función 1";
-        }
+        
     </script>
 </head>
 <body>
@@ -21,6 +17,32 @@
     <button type="button" onclick='document.getElementById("pruebas").innerHTML = "Hello Javascript!";'>Click Me!</button>
     <button type="button" onclick='myFunction01()'>Click Me!</button>
     <button type="button" onclick='myFunction02()'>Click Me!</button>
-    
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick='bulbOn()'>Turn on the light</button>
+
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+    <button onclick='bulbOff()'>Turn off the light</button>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="styleText">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="biggerText()">Aumentar Letra</button>
+    <button type="button" onclick="smallText()">Disminuir Letra</button>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="hide-element">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick='hideElement()'>Ocultar</button>
+    <button type="button" onclick='showElement()'>Mostrar</button>
+            
 </body>
 </html>
