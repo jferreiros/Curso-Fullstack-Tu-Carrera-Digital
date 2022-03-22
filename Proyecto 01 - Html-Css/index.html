@@ -12,18 +12,34 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <nav class="wrapper navbar">            
             <div class="logo">
-                <img src="images/logo.png" alt="logo">
+                    <img src="images/logo.png" alt="logo">
             </div>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="#comida">Comida</a></li>
-                    <li><a href="#clima">Clima</a></li>
-                    <li><a href="#economia">Economia</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="toggle">
+                <a href=""><img src="images/menublack.png" alt=""></a>
+            </div>
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a href="#comida">Comida</a>
+                </li>
+                <li class="list-item">
+                    <a href="#clima">Clima</a>
+                </li>
+                <li class="list-item">
+                    <a href="#economia">Economia</a>
+                </li>
+                <li class="list-item">
+                    <a href="#comida">Comida</a>
+                </li>
+                <li class="list-item">
+                    <a href="#clima">Clima</a>
+                </li>
+                <li class="list-item">
+                    <a href="#economia">Economia</a>
+                </li>                
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="wrapper">
@@ -196,6 +212,20 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if($(".nav-list").hasClass("active")) {
+                    $(".nav-list").removeClass("active");
+                    $(this).find("a").html("<img src='images/menublack.png'>");
+                } else {
+                    $(".nav-list").addClass("active");
+                    $(this).find("a").html("<img src='images/closeblack.png'>");
+                }
+            })
+        }
+        )
+    </script>
 </body>
 </html>

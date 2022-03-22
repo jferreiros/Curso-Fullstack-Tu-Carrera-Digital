@@ -80,37 +80,62 @@ body {
 /* Header */
 
 header {
-    height: 15vh;
-    background-color: white;    
+    height: 15vh;    
 }
 
-header .wrapper {    
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;    
+.navbar {    
+    display: flex;
+    
+    background-color: white;
 }
 
 /* Nav */
+
 .logo {
+    height: 100%;
     padding: 1rem 0;
+    flex: 1;        
 }
 .logo, img {
     height: 100%;
+    max-height: 100%;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
+.toggle {
+    width: 2rem;
+    display: none;
 }
 .nav-list {
     display: flex;
+    align-items: center;
 }
-.nav-list a {
-    padding: 1rem 0 1rem 1rem;
-    margin: 0 0 0 0.5rem;
+.list-item {
+    padding: 1.5rem 1rem;
 }
 .nav-list li a:hover {
     color: 000;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .nav-list.active,.toggle {
+        display: block;
+    }
+    .nav-list {
+        margin-top: 15px;
+        flex-direction: column;
+        display: none;
+    }
+    .list-item {
+    }
+    .toggle {
+        position: absolute;
+        top: 5.5vh;
+        right: 2rem;
+    }
 }
 /* Main content */
 
