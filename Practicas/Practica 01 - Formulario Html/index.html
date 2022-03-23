@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML - Ejercicio 01 - Curso Fullstack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+        font-size: 10px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.2;
+            margin: 2.5rem 0 0.5rem;
+            font-weight: 900;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+        }
+
+        h3 {
+            font-size: 2.4rem;
+        }
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            max-width: 70ch;
+            margin: 1rem 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        a {
+            font-size: 1.8rem;
+            color: inherit;
+            text-decoration: none;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        .btn {
+            background: #1488CC;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 0.1rem solid #2B32B2;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.6rem;
+            border-radius: 0.5vh;
+            margin: 1rem 0 0 0;            
+            align-self: center;
+        }
+        .btn:hover {
+            background: #2193b0;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 0.1rem solid #1488CC;
+        }
+        .container {
+            margin: 0 auto;
+            background: #2193b0;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: grid;
+            grid-template-columns: 12(1fr);
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            grid-column: 4/9;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 2rem;
+            padding: 4rem;
+        }
+        .form-get {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 0 0 0;
+        }
+        label {
+            font-size: 1.8rem;
+            margin: 0 auto;
+
+        }
+        select {
+            text-align: center;
+            align-self: center;
+            border: 0;
+            z-index: 1;
+            background-color: transparent;
+            border-bottom: 2px solid #2193b0; 
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.125rem;
+            padding: .5rem 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="textBox">
+                <h1>Formulario HTML & JS</h1>
+                <h3>Practica 01 - Curso Fullstack</h3>
+            </div>
+            <form action="https://tupelu.es/full_stack/api/api.php/wp_users" method="get" class="form-get">
+                <label for="columns">Name</label>
+                <select id="columns" name="columns">
+                    <option value="user_login">user_login</option>
+                    <option value="user_pass">user_pass</option>
+                    <option value="user_nicename">user_nicename</option>
+                    <option value="user_email">user_email</option>
+                    <option value="user_url">user_url</option>
+                    <option value="user_registered">user_registered</option>
+                    <option value="user_activation_key">user_activation_key</option>
+                    <option value="user_status">user_status</option>
+                    <option value="display_name">display_name</option>
+                </select>
+                <button type="submit" class="btn">Consultar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
