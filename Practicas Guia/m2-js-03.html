@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2 - Javascript - Funciones</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1: escribir una programa con cuatro funciones de flecha: sumar, restar, 
+        // multiplicar y dividir (cada una de ellas debe aceptar dos parámetros y devolver el 
+        // resultado). Posteriormente invocar a las cuatro funciones con valores arbitrarios.
+        const sumaF = (a,b) => {
+            return a + b;
+        }
+        const restaF = (a,b) => {
+            return a - b;
+        }
+        const multiF = (a,b) => {
+            return a * b;
+        }
+        const diviF = (a,b) => {
+            return a / b;
+        }
+        console.log(restaF(40,50));
+        console.log(sumaF(40,50));
+        console.log(multiF(40,50));
+        console.log(diviF(40,50));
+
+
+        // Ejercicio 2: adaptar el programa del ejercicio anterior simplificando las funciones de 
+        // flecha eliminando las llaves y el return.
+        const suma1F = (a,b) => a + b;
+        const resta1F = (a,b) => a - b;
+        const multi1F = (a,b) => a * b;
+        const divi1F = (a,b) => a / b;
+        
+        console.log(resta1F(40,50));
+        console.log(suma1F(40,50));
+        console.log(multi1F(40,50));
+        console.log(divi1F(40,50));
+
+        // Ejercicio 3: adaptar las cuatro funciones del Ejercicio 2 para que reciban un callback que 
+        // sea invocado dentro de la función con el resultado de la operación. Posteriormente 
+        // invocar a las cuatro funciones creando una función de callback por separado y pasándola 
+        // después por parámetro. Utilizar la herramienta de depuración de Chrome (Herramientas 
+        // de desarrollador --> Source) para comprobar cómo se ejecuta el programa.
+
+        // const sumaF2 = (a,b, sumaCal) => sumaCal(a + b);
+        // const sumaCal = (a + b) => console.log(a + b);
+        // console.log(sumaF2(1,2,sumaCal));
+
+        // const restaF2 = (a,b, restaCal) => restaCal(a - b); - b;
+        // const restaCal = (a + b) => console.log(a + b);
+
+        // const multiF2 = (a,b, multiCal) => multiCal(a * b);
+        // const sumaCal = (a + b) => console.log(a + b);
+
+        // const diviF2 = (a,b, diviCal) => diviCal(a / b);
+        // const sumaCal = (a + b) => console.log(a + b);
+
+
+        // Ejercicio 4: adaptar el ejercicio anterior para integrar el callback en la invocación de las 
+        // cuatro funciones, en lugar de creándola como una función de callback por separado.
+        // Utilizar la herramienta de depuración de Chrome para comprobar cómo se ejecuta el 
+        // programa.
+
+
+        // Ejercicio 5: adaptar las cinco funciones del Ejercicio 4 para que las cuatro funciones 
+        // invoquen el callback una vez han transcurrido 1 segundo (para la función sumar), 2 
+        // segundos (para la función restar), 3 segundos (para la función multiplicar) y 4 segundos 
+        // para dividir (para la función dividir). Añadir un console.log en la última línea del código 
+        // del programa. Utilizar la herramienta de depuración de Chrome para comprobar cómo se 
+        // ejecuta el programa.
+
+    </script>
+</body>
+</html>

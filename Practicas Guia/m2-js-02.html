@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2 - Javascript - Control de Flujo</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1: probar si las siguientes evaluaciones devuelven true o false.
+        // 4.3 >= 4
+        // 1 == 2
+        // 4 < 4
+        // 2 !== 5
+        // 5 == '5'
+        // 5 === '5'
+        // 5 == 5
+        // 5 === 5
+        if (4.3 >= 4) {
+            console.log("1. True");
+        } else {
+            console.log("1. False");
+        }
+        if (1 == 2) {
+            console.log("2. True");
+        } else {
+            console.log("2. False");
+        }
+        if (4 < 4) {
+            console.log("3. True");
+        } else {
+            console.log("3. False");
+        }
+        if (2 !== 5) {
+            console.log("4. True");
+        } else {
+            console.log("4. False");
+        }
+        if (5 == '5') {
+            console.log("5. True");
+        } else {
+            console.log("5. False");
+        }
+        if (5 === '5') {
+            console.log("6. True");
+        } else {
+            console.log("6. False");
+        }
+        if (5 == 5) {
+            console.log("7. True");
+        } else {
+            console.log("7. False");
+        }
+        if (5 === 5) {
+            console.log("8. True");
+        } else {
+            console.log("8. False");
+        }
+
+        // Ejercicio 2: escribe un programa con cuatro variables de tipo number (a, b, c y d) y un 
+        // condicional que imprima por pantalla si la suma de a y b es mayor que la suma de c y d.
+        let a = 10;
+        let b = 34;
+        let c = 65;
+        let d = 91;
+
+        if ((a + b) > (c + d)) {
+            console.log("La suma de a + b es mayor a la suma de c + d");            
+        } else {
+            console.log("La suma de a + b es menor o igual a la suma de c + d");
+        }
+        // Ejercicio 3: escribe un programa que almacene tres ángulos de un triángulo en variables 
+        // de tipo entero (angulo1, angulo2 y angulo3). Crea un condicional que compruebe si esos 
+        // tres ángulos juntos pueden formar un triángulo (los ángulos de un triángulo suman 
+        // siempre 180 grados).
+        let angulo1 = 30;
+        let angulo2 = 50;
+        let angulo3 = 120;
+
+        if ((angulo1 + angulo2 + angulo3) == 180) {
+            console.log("Los 3 angulos, pueden formar un triangulo");            
+        } else {
+            console.log("Los 2 angulos no pueden formar un triangulo");
+        }
+
+        // Ejercicio 4: escribe un programa con una variable de tipo number (a) y un condicional 
+        // que evalúe si el entero es par o impar utilizando el operador %.
+        a = 5;
+        if ((a % 2) == 0) {
+            console.log("a es par");            
+        } else {
+            console.log("a es impar");
+        }
+        // Ejercicio 5: escribe un programa que dado tres números imprima por pantalla cuál es el 
+        // mayor.
+        let numero01 = 234;
+        let numero02 = 692;
+        let numero03 = 90;
+
+        if (numero01 > numero02 & numero01 > numero03) {
+            console.log("numero01 " + numero01 + " es el mayor de los 3 numeros");            
+        } else if (numero02 > numero01 & numero02 > numero03) {
+            console.log("numero02 " + numero02 + " es el mayor de los 3 numeros");
+        } else if (numero03 > numero02 & numero03 > numero01) {
+            console.log("numero03 " + numero03 + " es el mayor de los 3 numeros");
+        }
+        // Ejercicio 6: ¿cuál es el resultado de ejecutar el siguiente código?
+        i = 25;
+        if(i == 25) { 
+        console.log("a");
+        }
+        else {
+        console.log("b");
+        }
+        // Ejercicio 7: ¿cuál es el resultado de ejecutar el siguiente código?
+        i = 25;
+        if(i == 25) { 
+        console.log("a");
+        }
+        if(i == 24) { 
+        console.log("b");
+        }
+        else { 
+        console.log("c");
+        }
+        // Ejercicio 8: escribe un programa que muestre todos los números desde el 1 al 50.
+        let numeros50 = [];
+        for (let index = 0; index < 50; index++) {
+            numeros50.push(index + 1);            
+        }
+        console.log(numeros50);
+        // Ejercicio 9: escribe un programa que imprima toda la tabla de multiplicar del 5 (desde 0 
+        // hasta 10).
+        let multiplos5 = [];
+        for (i = 0; i <= 10; i++) {
+            multiplos5.push(5*i);            
+        }
+        console.log(multiplos5);
+        // Ejercicio 10: escribe un programa que pida al usuario una palabra (mediante la función 
+        // prompt) y lo muestre por pantalla 10 veces.
+        let palabra = prompt("Escribe una palabra");
+        for (i = 0; i < 10; i++) {
+            console.log(palabra);            
+        }
+        // Ejercicio 11: escribe un programa que pida al usuario un número entero positivo 
+        // (mediante la función prompt) y muestre por pantalla la cuenta atrás desde ese número 
+        // hasta cero, utilizando comas como separación.
+
+        var number11 = parseInt(window.prompt("Ingresa un numero entero positivo"), 0);
+        console.log(number11);
+        console.log(typeof number11);
+        let cuentaAtras = [];
+        for (i = 0; i <= number11; i++) {
+            cuentaAtras.push((number11 - i));        
+        }
+        console.log(cuentaAtras);
+
+    </script>
+</body>
+</html>
