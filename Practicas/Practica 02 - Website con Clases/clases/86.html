@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="87.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h2>Cambiar el número</h2>
+    <p>Click the button, to change the number:</p>
+
+    <button onclick="cambiaNumero()">Cambia el número</button><br><br>
+    <input type="text" id="miNumero" name="miNumero" value=0><br><br>
+    <button onclick="cambiaNumeroReloj()">Activa Reloj</button><br><br>
+    <img src="https://images.vexels.com/media/users/3/139880/isolated/preview/5c7018165ca328f070d73ea0b92c61e7-gato-corriendo-secuencia-3-by-vexels.png" alt="" id="miImagen">
+    
+    <ul class="clock-digital">
+        <li class="horas">00</li>
+        <span>:</span>
+        <li class="minutos">00</li>
+        <span>:</span>
+        <li class="segundos">00</li>
+    </ul>
+
+
+    <div class="clock">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+    </div>
+
+    
+    <script src="88.js"></script>
+</body>
+</html>
