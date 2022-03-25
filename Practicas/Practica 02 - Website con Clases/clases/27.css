@@ -1,0 +1,108 @@
+  /*Margin y Padding*/
+  div {
+    border: 1px solid black;
+    background-color: lightblue;
+  }
+  div.special {
+    margin: 25px 50px 75px 100px;
+    margin: 100px;
+    padding: 25px 50px 75px 100px;
+    padding: 100px;
+  }
+  div.intern {
+    margin: auto;
+    background-color: rgb(238, 255, 0);
+    width: max-content;
+  }
+  div.secund {
+    margin-left: 200px;
+  }
+  p.ex1 {
+    margin-left: inherit;
+  }
+  div.ex1 {
+    width: 300px;
+    background-color: yellow;
+  }  
+  div.ex2 {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+  }
+  div.ex3 {
+    width: 300px;
+    padding: 25px;
+    background-color: lightblue;
+  }
+  div.ex4 {
+    max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+  }
+  
+  /* <--------- Basic Styling ---------> */
+
+* {
+  font-size: 10px;
+  font-family: 'Azeret Mono', monospace;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Azeret Mono', monospace;
+  line-height: 1.2;
+  margin: 2.5rem 0 0.5rem;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 70ch;
+  margin: 1rem 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.btn {
+  background-color: var(--primary-500);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 0.5vh;
+  margin: 1rem 0 0 0;
+}
+
+/* <--------- End Basic Styling ---------> */

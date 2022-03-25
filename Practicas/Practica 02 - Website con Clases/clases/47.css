@@ -1,0 +1,152 @@
+  /* SCROLL */
+  
+  .no-overflowTest {
+    background: #4CAF50;
+    color: blue;
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    border: 1px solid #ccc;
+  }
+  #overflowTest {
+    overflow: scroll;
+  }
+  #overflowTest-hidden {
+    overflow: hidden;
+  }
+  #overflowTest-auto {
+    overflow: auto;
+  }
+
+
+  /* FLOTAR */
+
+  img {
+    margin: 10px;
+  }
+  img.izq {
+    float: left;
+  }
+  img.der {
+    float: right;
+  }
+
+  
+  div {
+    padding: 15px; 
+    margin: 15px; 
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .div1 {
+    background: red;
+  }
+  
+  .div2  {
+    background: yellow;
+  }
+  
+  .div3  {
+    background: green;
+  }
+    /* CLEAR */
+  .div1-clear {
+    float: left;
+    padding: 10px;
+    border: 3px solid #73AD21;
+  }
+  
+  .div2-clear {
+    padding: 10px;
+    border: 3px solid red;
+  }
+  
+  .div4-clear {
+    padding: 10px;
+    border: 3px solid red;
+    clear: left;
+  }
+
+  /* CLEARFIX */
+
+  div.no-clearfix {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+  }
+  
+  .img1 {
+    float: right;
+  }
+  
+  .clearfix {
+    overflow: auto;
+  }
+
+  /* <--------- Basic Styling ---------> */
+
+* {
+  font-size: 10px;
+  font-family: 'Azeret Mono', monospace;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Azeret Mono', monospace;
+  line-height: 1.2;
+  margin: 2.5rem 0 0.5rem;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 70ch;
+  margin: 1rem 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.btn {
+  background-color: var(--primary-500);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 0.5vh;
+  margin: 1rem 0 0 0;
+}
+
+/* <--------- End Basic Styling ---------> */
