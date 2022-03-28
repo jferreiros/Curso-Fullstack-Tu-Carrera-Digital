@@ -47,6 +47,20 @@
         // después por parámetro. Utilizar la herramienta de depuración de Chrome (Herramientas 
         // de desarrollador --> Source) para comprobar cómo se ejecuta el programa.
 
+        const suma2F = (a,b, callback) => callback(a + b);
+        const resta2F = (a,b, callback) => callback(a - b);
+        const multi2F = (a,b, callback) => callback(a * b);
+        const divi2F = (a,b, callback) => callback(a / b);
+
+        const callback = (resultado) => {
+            console.log(resultado);
+        }
+
+        suma2F(40,50,callback);
+        resta2F(40,50,callback);
+        multi2F(40,50,callback);
+        divi2F(40,50,callback);
+
         // const sumaF2 = (a,b, sumaCal) => sumaCal(a + b);
         // const sumaCal = (a + b) => console.log(a + b);
         // console.log(sumaF2(1,2,sumaCal));
@@ -73,6 +87,22 @@
         // para dividir (para la función dividir). Añadir un console.log en la última línea del código 
         // del programa. Utilizar la herramienta de depuración de Chrome para comprobar cómo se 
         // ejecuta el programa.
+
+        const suma5F = (a,b, callback5) => {
+            setTimeOut(() => callback5(a + b), 1000)
+        };
+        const resta5F = (a,b, callback5) => {setTimeOut(() => callback5(a - b), 2000)};
+        const multi5F = (a,b, callback5) => {setTimeOut(() => callback5(a * b), 3000)};
+        const divi5F = (a,b, callback5) => {setTimeOut(() => callback5(a / b), 4000)};
+
+        const callback5 = (resultado) => {
+            console.log(resultado);
+        }
+
+        suma5F(40,50,callback5);
+        resta5F(40,50,callback5);
+        multi5F(40,50,callback5);
+        divi5F(40,50,callback5);
 
     </script>
 </body>
