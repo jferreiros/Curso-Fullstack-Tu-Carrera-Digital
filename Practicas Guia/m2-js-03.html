@@ -89,11 +89,11 @@
         // ejecuta el programa.
 
         const suma5F = (a,b, callback5) => {
-            setTimeOut(() => callback5(a + b), 1000)
-        };
-        const resta5F = (a,b, callback5) => {setTimeOut(() => callback5(a - b), 2000)};
-        const multi5F = (a,b, callback5) => {setTimeOut(() => callback5(a * b), 3000)};
-        const divi5F = (a,b, callback5) => {setTimeOut(() => callback5(a / b), 4000)};
+            setTimeout(() => {callback5(a + b)}, 1000)
+        }
+        const resta5F = (a,b, callback5) => {setTimeout(() => callback5(a - b), 2000)};
+        const multi5F = (a,b, callback5) => {setTimeout(() => callback5(a * b), 3000)};
+        const divi5F = (a,b, callback5) => {setTimeout(() => callback5(a / b), 4000)};
 
         const callback5 = (resultado) => {
             console.log(resultado);

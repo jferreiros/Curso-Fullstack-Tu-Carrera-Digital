@@ -1,0 +1,65 @@
+<html>
+    <script>
+
+        const list = ["Mercedes", "Masserati", "Lamborghini", "Ferrari", "Fiat"];
+        const marcas = [
+            {name: "Bitcoin", img: "https://www.pngitem.com/pimgs/m/121-1212472_bitcoin-png-bitcoin-logo-vector-png-transparent-png.png"},
+            {name: "Ethereum", img: "https://www.creativefabrica.com/wp-content/uploads/2021/06/14/Cryptocurrency-Ethereum-Logo-Graphics-13394054-1.jpg"},
+            {name: "Terra", img: "https://old.trybe.one/wp-content/uploads/2021/09/Terra-image.png"},
+            {name: "Polygon", img: "https://c8.alamy.com/zoomses/9/ca8385ccae4b473490b2f3c035cc6a9f/2g0r7je.jpg"}
+        ]
+        const places = [
+            {name: "Valencia", img: "https://cdn.pixabay.com/photo/2015/11/18/16/03/valencia-1049389__480.jpg"},
+            {name: "Barcelona", img: "https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/spain/barcelona/destinations-barcelona-banner-mobile-1024x553.jpg"},
+            {name: "Madrid", img: "https://a.cdn-hotels.com/gdcs/production133/d1207/7ad2d7f0-68ce-11e8-8a0f-0242ac11000c.jpg"},
+            {name: "Malaga", img: "https://cdn.getyourguide.com/img/location/540dc85da2a04-m1409276338.jpg/88.jpg"}
+        ]
+        
+        function init() {
+            const main = document.getElementById("main");
+            // main.innerHTML = "<p>Soy un parrafo</p>"; 
+            
+            list.map((current, index) => {
+                main.innerHTML += "<p>" + list[index] + "</p>"; 
+            })
+        }
+
+        function init2() {
+            const main = document.getElementById("main");
+            const parrafos = document.getElementsByTagName("p");
+            console.log(main);
+            console.log(parrafos);
+            marcas.map((current,index) => {
+                parrafos[index].innerHTML += "<p>" + marcas[index].name + "<img src=" + marcas[index].img + ">"+ "</p>" ;
+                console.log(parrafos[index]);
+            }) 
+        }
+
+        window.onload = init2;
+
+    </script>
+    <style>
+        #main {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        p {
+            grid-column: span 3;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+    <body>
+        <div id="main">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        
+    </body>
+</html>
