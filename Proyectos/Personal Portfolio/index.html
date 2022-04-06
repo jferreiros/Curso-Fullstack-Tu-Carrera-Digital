@@ -5,75 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joaquin Ferreiros - Desarrollador Full Stack Junior</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
-        <nav class="container navbar">
-            <ul>
-                <li>Sobre Mi</li>
-                <li>Skills</li>
-                <li>Proyectos</li>
-                <li>Experiencia</li>
-                <li>Contacto</li>
+        <nav class="wrapper nav">
+            <ul class="navbar">
+                <li class="nav-item"><a href="" >Sobre Mi</a></li>
+                <li class="nav-item"><a href="" >Skills</a></li>
+                <li class="nav-item"><a href="" >Proyectos</a></li>
+                <li class="nav-item"><a href="" >Experiencia</a></li>
+                <li class="nav-item"><a href="" >Contacto</a></li>
+                <button class="btn btn-secondary">Descargar CV</button>
             </ul>
-            <button class="btn"></button>
+            
         </nav>
     </header>
     <main>
         <section class="section-hero">
-            <div class="wrapper">
-                <h1>Hola, soy Joaquin, desarrollador web junior</h1>
-                <p></p>
-                <button class="btn">Sobre Mi</button>
+            <div class="wrapper hero">
+                <div class="hero-text">
+                    <h1>Hola, soy Joaquin, desarrollador web junior</h1>
+                    <p></p>
+                    <button class="btn btn-secondary">Sobre Mi</button>
+                </div>
+                <img src="images/fotoperfil.png" alt="">
             </div>
         </section>
         <section class="section-aboutme">
-            <div class="wrapper">
+            <div class="wrapper aboutme">
                 <h2>Sobre mi</h2>
-                <p></p>
-                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam illum veritatis sed ut assumenda excepturi minima inventore cum quas. Dignissimos eaque architecto corporis. Vel tempora quo sapiente velit recusandae?</p>
+                <button class="btn btn-secondary">Descargar CV</button>
             </div>
         </section>
         <section class="section-skills">
-            <div class="wrapper">
+            <div class="wrapper skills">
                 <div class="title-section">
                     <h2>Tecnologías</h2>
-                    <p></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi.</p>
                 </div>
                 <div class="skills-view">
-
+                    <img src="./images/illustrator.png" alt="" class="skill-item">
+                    <img src="./images/figma.png" alt="" class="skill-item">
+                    <img src="./images/html.png" alt="" class="skill-item">
+                    <img src="./images/css.png" alt="" class="skill-item">
+                    <img src="./images/sass.png" alt="" class="skill-item">
+                    <img src="./images/bootstrap.png" alt="" class="skill-item">
+                    <img src="./images/javascript.png" alt="" class="skill-item">
+                    <img src="./images/react.png" alt="" class="skill-item">
+                    <img src="./images/angular.png" alt="" class="skill-item">
+                    <img src="./images/java.png" alt="" class="skill-item">
+                    <img src="./images/spring.png" alt="" class="skill-item">
+                    <img src="./images/mongodb.png" alt="" class="skill-item">
+                    <img src="./images/express.png" alt="" class="skill-item">
+                    <img src="./images/nodejs.png" alt="" class="skill-item">
+                    <img src="./images/mysql.png" alt="" class="skill-item">
                 </div>
-                <button class="btn">Descargar CV</button>
             </div>
         </section>
-        <section class="section-proyects">
-            <div class="wrapper">
-                <div class="title-section">
+        <section class="section-projects">
+            <div class="wrapper projects">
+                <div class="projects-title">
                     <h2>Proyectos</h2>
                     <p>Estos son algunos de los proyectos que estuve trabajando</p>
                 </div>
-                <div class="proyects-view">
-                    <div class="proyect-card">
-                        <img src="" alt="" class="card-img">
-                        <div class="card-textBox">
-                            <span class="card-date"></span>
-                            <h4 class="card-title"></h4>
-                            <span class="card-tech"></span>
-                            <p class="card-description"></p>
-                            <button class="btn btn-github">Git-hub</button>
-                            <button class="btn btn-live-preview">Live View</button>
+                <div class="projects-view">
+                    <div class="project-card">
+                        <div class="card-img">
+                            <img src="./images/proyecto01.png" alt="">
+                        </div>
+                        <div class="card-text-box">
+                            <span class="card-date">Agosto 2021</span>
+                            <h4 class="card-title">Ecommerce Supermercado</h4>
+                            <ul class="card-tech">
+                                <li class="tech-categorie">React</li>
+                                <li class="tech-categorie">Angular</li>
+                                <li class="tech-categorie">Java</li>
+                                <li class="tech-categorie">Javascript</li>
+                            </ul>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur, natus rerum in necessitatibus voluptatibus non harum facili</p>
+                            <div class="card-btn">
+                                <button class="btn btn-github"><img src="./images/github.svg" alt="">Git-Hub</button>
+                                <button class="btn btn-live-preview"><img src="./images/live.svg" alt=""> Live View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-img">
+                            <img src="./images/proyecto01.png" alt="">
+                        </div>
+                        <div class="card-text-box">
+                            <span class="card-date">Agosto 2021</span>
+                            <h4 class="card-title">Ecommerce Supermercado</h4>
+                            <ul class="card-tech">
+                                <li class="tech-categorie">React</li>
+                                <li class="tech-categorie">Angular</li>
+                                <li class="tech-categorie">Java</li>
+                                <li class="tech-categorie">Javascript</li>
+                            </ul>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur, natus rerum in necessitatibus voluptatibus non harum facili</p>
+                            <div class="card-btn">
+                                <button class="btn btn-github"><img src="./images/github.svg" alt="">Git-Hub</button>
+                                <button class="btn btn-live-preview"><img src="./images/live.svg" alt=""> Live View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-img">
+                            <img src="./images/proyecto01.png" alt="">
+                        </div>
+                        <div class="card-text-box">
+                            <span class="card-date">Agosto 2021</span>
+                            <h4 class="card-title">Ecommerce Supermercado</h4>
+                            <ul class="card-tech">
+                                <li class="tech-categorie">React</li>
+                                <li class="tech-categorie">Angular</li>
+                                <li class="tech-categorie">Java</li>
+                                <li class="tech-categorie">Javascript</li>
+                            </ul>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur, natus rerum in necessitatibus voluptatibus non harum facili</p>
+                            <div class="card-btn">
+                                <button class="btn btn-github"><img src="./images/github.svg" alt="">Git-Hub</button>
+                                <button class="btn btn-live-preview"><img src="./images/live.svg" alt=""> Live View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-img">
+                            <img src="./images/proyecto01.png" alt="">
+                        </div>
+                        <div class="card-text-box">
+                            <span class="card-date">Agosto 2021</span>
+                            <h4 class="card-title">Ecommerce Supermercado</h4>
+                            <ul class="card-tech">
+                                <li class="tech-categorie">React</li>
+                                <li class="tech-categorie">Angular</li>
+                                <li class="tech-categorie">Java</li>
+                                <li class="tech-categorie">Javascript</li>
+                            </ul>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur, natus rerum in necessitatibus voluptatibus non harum facili</p>
+                            <div class="card-btn">
+                                <button class="btn btn-github"><img src="./images/github.svg" alt="">Git-Hub</button>
+                                <button class="btn btn-live-preview"><img src="./images/live.svg" alt=""> Live View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-img">
+                            <img src="./images/proyecto01.png" alt="">
+                        </div>
+                        <div class="card-text-box">
+                            <span class="card-date">Agosto 2021</span>
+                            <h4 class="card-title">Ecommerce Supermercado</h4>
+                            <ul class="card-tech">
+                                <li class="tech-categorie">React</li>
+                                <li class="tech-categorie">Angular</li>
+                                <li class="tech-categorie">Java</li>
+                                <li class="tech-categorie">Javascript</li>
+                            </ul>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur, natus rerum in necessitatibus voluptatibus non harum facili</p>
+                            <div class="card-btn">
+                                <button class="btn btn-github"><img src="./images/github.svg" alt="">Git-Hub</button>
+                                <button class="btn btn-live-preview"><img src="./images/live.svg" alt=""> Live View</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section-contact">
-            <div class="wrapper">
+            <div class="wrapper contact">
+                <div class="contact-title">
+                    <h2>Contactame</h2>
+                </div>
                 <form action="" class="contact-form">
-
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <button class="btn btn-primary">Enviar</button>
                 </form>
                 <div class="social-profiles">
 
