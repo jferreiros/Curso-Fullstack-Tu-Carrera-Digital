@@ -73,6 +73,7 @@ img {
     font-size: 1.6rem;
     border-radius: 0.5vh;
     margin: 1rem 0 0 0;
+    align-self: flex-start;
 }
 .btn-primary {
     background-color: var(--primary-500);
@@ -92,9 +93,10 @@ body {
 
 .wrapper {
     max-width: 1200px;
-    margin: auto;
-    padding: 0 4rem;
+    margin: 0 auto;
+    padding: 4rem;
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -115,9 +117,10 @@ header {
 
 /* <---------------- Navbar ----------------> */
 
-/* .nav {
+.nav {
     width: 100%;
-} */
+    padding: 0 4rem;
+}
 
 .navbar {
     display: flex;
@@ -161,10 +164,12 @@ header {
 
 .section-aboutme {
     background-color: var(--neutral-200);
+    height: auto;
+    min-height: 60vh;
 }
 
 .aboutme {
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +182,13 @@ header {
 }
 /* <---------------- Section Skills ----------------> */
 
-.section-skilss {
+.divider {
+    width: 40%;
+    border-top: 0.1rem dashed var(--neutral-700);
+    position: absolute;
+    margin-left: 30%;
+}
+.section-skills {
     
 }
 
@@ -187,7 +198,7 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .skills-view {
@@ -215,7 +226,6 @@ header {
 
 .projects {
     min-height: 100vh;
-    padding: 4rem 0;
 }
 
 .projects-title {
@@ -223,20 +233,21 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .projects-view {
-    padding: 1rem 0;
+    padding: 4rem 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
 }
 
 .project-card {
     width: 100%;
     color: var(--neutral-800);
     background-color: var(--neutral-200) ;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
@@ -244,15 +255,13 @@ header {
 }
 
 .card-img {
-    height: 25vh;
+    height: 30vh;
     overflow: hidden;
     position: relative;
 }
 
 .card-img img {
-    min-width: 100%;
-    min-height: 100%;
-    max-height: 200%;
+    min-height: 120%;
     position: absolute;
     top: -9999px;
     bottom: -9999px;
@@ -263,6 +272,10 @@ header {
 
 .card-text-box {
     padding: 0.5rem 1rem 1rem;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-date {
@@ -270,12 +283,39 @@ header {
 }
 
 .card-title {
-    margin-top: 0 !important;
+    margin-top: 0.5rem !important;
 }
 
+.react {
+    background-color: #61dbfb !important;
+}
+.angular {
+    background-color: #c3002f !important;
+}
+.java {
+    background-color: #f22e2f !important;
+}
+.javascript {
+    background-color: #e4a126 !important;
+}
+.html {
+    background-color: #e44d26 !important;
+}
+.css {
+    background-color: #0170ba !important;
+}
+.nodejs {
+    background-color: #4a8f46 !important;
+}
+.bootstrap {
+    background-color: #7b08f7 !important;
+}
 .card-tech {
     display: flex;
     gap: 0.5rem;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
@@ -294,33 +334,66 @@ header {
 .card-btn {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card-btn button {
+    padding: 0.2rem 0.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 .btn-github {
     background-color: white;
     color: var(--primary-500);
-    border: 1px solid var(--primary-500);
-    padding: 0.2rem 1rem;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 30%;
+    border: 1px solid var(--primary-500);    
 }
 
 .btn img {
-    width: 1.5rem;
+    width: 1rem;
 }
 
 .btn-live-preview {
     background-color: var(--primary-500);
     color: white;
     border: 1px solid var(--primary-500);
-    padding: 0.2rem 1rem;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 35%;
+}
+
+@media screen and (max-width: 1150px) {
+    .projects-view { 
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .skills-view {
+        width: 80%;
+    } 
+    .projects-view { 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .contact {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .projects {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .skills-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .projects-view { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-btn {
+        flex-direction: column;
+    }
 }
 
 /* <---------------- Section Contact ----------------> */
@@ -330,29 +403,77 @@ header {
 }
 
 .contact {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-left {
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    
 }
 
 .contact-title {
-
+    grid-row: span 1;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 80%;
+    align-items: left;
+    margin-top: 3rem;
 }
 
 .contact-form input {
     background: none;
     border: none;
-    border-bottom: 0.2rem solid var(--primary-500);
-    width: 50%;
+    border: 0.2rem solid var(--primary-500);
     padding: 1rem;
-    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.contact-form textarea {
+    background: none;
+    border: none;
+    border: 0.2rem solid var(--primary-500);
+    padding: 1rem;
+    resize: none;
+    font-size: 1.4rem;
+}
+
+.contact-right {
+    background-color: var(--primary-500);
+}
+
+.social-profiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+    gap: 1rem;
+    height: 100%;
+}
+
+.social-profiles div {
+    border-radius: 0.5rem;
+    border: 0.2rem solid white;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.social-profiles img {
+    width: 4rem;
 }
